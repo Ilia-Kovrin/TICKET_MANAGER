@@ -10,7 +10,7 @@ public class TicketManager {
         this.repository = repository;
     }
 
-    public void add(Ticket product){
+    public void add(Ticket product) {
         repository.add(product);
     }
 
@@ -31,12 +31,12 @@ public class TicketManager {
     }
 
 
-    public boolean matches (Ticket ticket, String from, String to) {
-            if (ticket.getFrom().equals(from)) {
-                if (ticket.getTo().equals(to)) {
-                    return true;
-                }
+    public boolean matches(Ticket ticket, String from, String to) {
+        if (ticket.getFrom().equals(from)) {
+            if (ticket.getTo().equals(to)) {
+                return true;
             }
+        }
 
         return false;
     }
